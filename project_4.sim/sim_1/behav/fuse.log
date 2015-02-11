@@ -1,0 +1,41 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle pa -incremental -L work -L secureip -o tb_hack.exe --prj H:/Xilinx/project_4/project_4.sim/sim_1/behav/tb_hack.prj -top work.tb_hack 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/PlanAhead/data/verilog/src/glbl.v" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Register.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Mux.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/BRAM.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/InstructionMemory.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/DataMemory.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/CPU.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Hack.vhd" into library work
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sim_1/new/tb_hack.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity ALU [\ALU(16)\]
+Compiling architecture behavioral of entity SimpleRegister [\SimpleRegister(16)\]
+Compiling architecture behavioral of entity Mux [\Mux(16)\]
+Compiling architecture behavioral of entity ProgramCounter [\ProgramCounter(16)\]
+Compiling architecture behavioral of entity CPU [cpu_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling architecture behavioral of entity BRAM [\BRAM(10,16,false,"H:\\HWPrak14\...]
+Compiling architecture behavioral of entity DataMemory [datamemory_default]
+Compiling architecture behavioral of entity BRAM [\BRAM(10,16,false,"H:\\HWPrak14\...]
+Compiling architecture behavioral of entity InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity Hack [hack_default]
+Compiling architecture behavioral of entity tb_hack
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable tb_hack.exe
+Fuse Memory Usage: 41396 KB
+Fuse CPU Usage: 841 ms

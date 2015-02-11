@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn Hack.prj
+-top Hack
+-p xc6slx9csg324-2
+-ofn Hack.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt

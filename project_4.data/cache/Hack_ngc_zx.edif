@@ -1,0 +1,31 @@
+(edif Hack
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2015 1 28 16 42 24)
+      (program "Xilinx ngc2edif" (version "P.68d"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure Hack.ngc Hack.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+  )
+
+  (library Hack_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+  )
+
+  (design Hack
+    (cellRef Hack
+      (libraryRef Hack_lib)
+    )
+    (property PART (string "xc6slx9csg324-2") (owner "Xilinx"))
+  )
+)
+

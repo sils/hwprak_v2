@@ -1,0 +1,253 @@
+
+*** Running xst
+    with args -ifn "Hack.xst" -ofn "Hack.srp" -intstyle ise
+
+Reading design: Hack.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Register.vhd" into library work
+Parsing entity <SimpleRegister>.
+Parsing architecture <Behavioral> of entity <simpleregister>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" into library work
+Parsing entity <ProgramCounter>.
+Parsing architecture <Behavioral> of entity <programcounter>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Mux.vhd" into library work
+Parsing entity <Mux>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/BRAM.vhd" into library work
+Parsing entity <BRAM>.
+Parsing architecture <Behavioral> of entity <bram>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/InstructionMemory.vhd" into library work
+Parsing entity <InstructionMemory>.
+Parsing architecture <Behavioral> of entity <instructionmemory>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/DataMemory.vhd" into library work
+Parsing entity <DataMemory>.
+Parsing architecture <Behavioral> of entity <datamemory>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/CPU.vhd" into library work
+Parsing entity <CPU>.
+Parsing architecture <Behavioral> of entity <cpu>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Hack.vhd" into library work
+Parsing entity <Hack>.
+Parsing architecture <Behavioral> of entity <hack>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Hack> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CPU> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 26: c1_6 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 30: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 31: a_or_m should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 32: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 33: a_or_m should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 34: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 35: a_or_m should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 36: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 37: a_or_m should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 38: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 39: a_or_m should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 40: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 41: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 42: a_or_m should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 43: register_d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 44: register_d should be on the sensitivity list of the process
+
+Elaborating entity <SimpleRegister> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Register.vhd" Line 22: reset should be on the sensitivity list of the process
+
+Elaborating entity <Mux> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ProgramCounter> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 30: jump should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 31: jump should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 32: jump should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 33: inval should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 35: outval_s should be on the sensitivity list of the process
+
+Elaborating entity <DataMemory> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BRAM> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <InstructionMemory> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <BRAM> (architecture <Behavioral>) with generics from library <work>.
+WARNING:Xst:2972 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Hack.vhd" line 25. All outputs of instance <CPU_inst> of block <CPU> are unconnected in block <Hack>. Underlying logic will be removed.
+WARNING:Xst:2972 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Hack.vhd" line 37. All outputs of instance <DataMemory_inst> of block <DataMemory> are unconnected in block <Hack>. Underlying logic will be removed.
+WARNING:Xst:2972 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Hack.vhd" line 46. All outputs of instance <InstructionMemory_inst> of block <InstructionMemory> are unconnected in block <Hack>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Hack>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Hack.vhd".
+    Summary:
+	no macro.
+Unit <Hack> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd".
+        WIDTH = 16
+WARNING:Xst:647 - Input <c<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c<15:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <SimpleRegister>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Register.vhd".
+        WIDTH = 16
+    Found 16-bit register for signal <outval>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <SimpleRegister> synthesized.
+
+Synthesizing Unit <Mux>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Mux.vhd".
+        WIDTH = 16
+    Summary:
+	no macro.
+Unit <Mux> synthesized.
+
+Synthesizing Unit <ProgramCounter>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd".
+        WIDTH = 16
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ProgramCounter> synthesized.
+
+Synthesizing Unit <BRAM_1>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/BRAM.vhd".
+        MEM_ADDR_WIDTH = 10
+        MEM_DATA_WIDTH = 16
+        EDGE_TYPE = false
+        MEM_NAME = "H:\HWPrak14\task_4\data.hack"
+    Found 1024x16-bit single-port RAM <Mram_Ram> for signal <Ram>.
+    Found 1-bit register for signal <ReadData<15>>.
+    Found 1-bit register for signal <ReadData<14>>.
+    Found 1-bit register for signal <ReadData<13>>.
+    Found 1-bit register for signal <ReadData<12>>.
+    Found 1-bit register for signal <ReadData<11>>.
+    Found 1-bit register for signal <ReadData<10>>.
+    Found 1-bit register for signal <ReadData<9>>.
+    Found 1-bit register for signal <ReadData<8>>.
+    Found 1-bit register for signal <ReadData<7>>.
+    Found 1-bit register for signal <ReadData<6>>.
+    Found 1-bit register for signal <ReadData<5>>.
+    Found 1-bit register for signal <ReadData<4>>.
+    Found 1-bit register for signal <ReadData<3>>.
+    Found 1-bit register for signal <ReadData<2>>.
+    Found 1-bit register for signal <ReadData<1>>.
+    Found 1-bit register for signal <ReadData<0>>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <BRAM_1> synthesized.
+
+Synthesizing Unit <BRAM_2>.
+    Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/BRAM.vhd".
+        MEM_ADDR_WIDTH = 10
+        MEM_DATA_WIDTH = 16
+        EDGE_TYPE = false
+        MEM_NAME = "H:\HWPrak14\task_4\PWM1_short.hack"
+    Found 1024x16-bit single-port RAM <Mram_Ram> for signal <Ram>.
+    Found 1-bit register for signal <ReadData<15>>.
+    Found 1-bit register for signal <ReadData<14>>.
+    Found 1-bit register for signal <ReadData<13>>.
+    Found 1-bit register for signal <ReadData<12>>.
+    Found 1-bit register for signal <ReadData<11>>.
+    Found 1-bit register for signal <ReadData<10>>.
+    Found 1-bit register for signal <ReadData<9>>.
+    Found 1-bit register for signal <ReadData<8>>.
+    Found 1-bit register for signal <ReadData<7>>.
+    Found 1-bit register for signal <ReadData<6>>.
+    Found 1-bit register for signal <ReadData<5>>.
+    Found 1-bit register for signal <ReadData<4>>.
+    Found 1-bit register for signal <ReadData<3>>.
+    Found 1-bit register for signal <ReadData<2>>.
+    Found 1-bit register for signal <ReadData<1>>.
+    Found 1-bit register for signal <ReadData<0>>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <BRAM_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Hack> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block Hack, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+=========================================================================
