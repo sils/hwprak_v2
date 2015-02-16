@@ -7,15 +7,15 @@ entity LEDPWM is
         WIDTH : integer := 7 -- that makes 256 bit combinations
     );
     Port (
-        CLK_66MHZ : in std_ulogic;
-        LED : out std_ulogic_vector(3 downto 0);
+        CLK_66MHZ : in std_logic;
+        LED : out std_logic_vector(3 downto 0);
         duty_cycle : in unsigned(7 downto 0)
     );
 end LEDPWM;
 
 architecture Behavioral of LEDPWM is
 	signal counter : unsigned(7 downto 0) := (others => '0');
-	signal ledstate : std_ulogic := '0';
+	signal ledstate : std_logic := '0';
 begin
 ledstate <= '1' when duty_cycle > counter else '0';
 LED(0) <= ledstate;

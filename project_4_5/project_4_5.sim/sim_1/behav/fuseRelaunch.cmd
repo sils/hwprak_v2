@@ -1,1 +1,1 @@
--intstyle "pa" -incremental -L "work" -L "secureip" -o "testeverything_tb.exe" --prj "H:/hwprak/task_3/task_3.sim/sim_1/behav/testeverything_tb.prj" -top "work.testeverything_tb" 
+-intstyle "pa" -incremental -L "work" -L "secureip" -o "testeverything_tb.exe" --prj "H:/Xilinx/project_4/project_4_5/project_4_5.sim/sim_1/behav/testeverything_tb.prj" -top "work.testeverything_tb" 

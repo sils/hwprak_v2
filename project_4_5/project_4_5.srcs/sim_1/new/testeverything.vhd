@@ -6,8 +6,8 @@ entity testeverything_tb is
 end testeverything_tb;
 
 architecture Behavioral of testeverything_tb is
-	signal led : std_ulogic_vector(3 downto 0);
-	signal clock : std_ulogic := '0';
+	signal led : std_logic_vector(3 downto 0);
+	signal clock : std_logic := '0';
 	
 	signal SDA, SCL, USER_RESET: std_logic;
 begin

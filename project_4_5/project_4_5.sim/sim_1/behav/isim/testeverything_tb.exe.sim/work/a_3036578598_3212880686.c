@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//nap.rz.tu-harburg.de/fs2$/19/sils1297/windows/hwprak/task_3/task_3.srcs/sources_1/new/PWM.vhd";
+static const char *ng0 = "//nap.rz.tu-harburg.de/fs1$/18/sims1301/windows/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/PWM.vhd";
 extern char *IEEE_P_1242562249;
 extern char *IEEE_P_2592010699;
 
@@ -52,10 +52,10 @@ static void work_a_3036578598_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(20, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7728U);
+    t1 = (t0 + 8008U);
     t3 = (t0 + 1512U);
     t4 = *((char **)t3);
-    t3 = (t0 + 7744U);
+    t3 = (t0 + 8024U);
     t5 = ieee_p_1242562249_sub_2110411308_1035706684(IEEE_P_1242562249, t2, t1, t4, t3);
     if (t5 != 0)
         goto LAB3;
@@ -246,7 +246,7 @@ LAB1:    return;
 LAB2:    xsi_set_current_line(29, ng0);
     t4 = (t0 + 1512U);
     t5 = *((char **)t4);
-    t4 = (t0 + 7744U);
+    t4 = (t0 + 8024U);
     t6 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t3, t5, t4, 1);
     t7 = (t3 + 12U);
     t8 = *((unsigned int *)t7);

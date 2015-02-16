@@ -7,11 +7,11 @@ entity SimpleRegister is
 		WIDTH : integer := 16
 	);
 	Port(
-		inval  : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		outval : out std_ulogic_vector(WIDTH - 1 downto 0);
-		set    : in  std_ulogic;
-		reset  : in  std_ulogic;
-		clock  : in  std_ulogic
+		inval  : in  std_logic_vector(WIDTH - 1 downto 0);
+		outval : out std_logic_vector(WIDTH - 1 downto 0);
+		set    : in  std_logic;
+		reset  : in  std_logic;
+		clock  : in  std_logic
 	);
 end SimpleRegister;
 

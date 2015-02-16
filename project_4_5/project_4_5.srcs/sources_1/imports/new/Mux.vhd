@@ -10,10 +10,10 @@ entity Mux is
 		WIDTH : integer := 16
 	);
 	Port(
-		val1   : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		val2   : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		switch : in  std_ulogic;
-		outval : out std_ulogic_vector(WIDTH - 1 downto 0)
+		val1   : in  std_logic_vector(WIDTH - 1 downto 0);
+		val2   : in  std_logic_vector(WIDTH - 1 downto 0);
+		switch : in  std_logic;
+		outval : out std_logic_vector(WIDTH - 1 downto 0)
 	);
 end Mux;
 

@@ -7,19 +7,19 @@ entity ProgramCounter is
 		WIDTH : integer := 16
 	);
 	Port(
-		inval       : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		comp        : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		instruction : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		reset       : in  std_ulogic;
-		clock       : in  std_ulogic;
+		inval       : in  std_logic_vector(WIDTH - 1 downto 0);
+		comp        : in  std_logic_vector(WIDTH - 1 downto 0);
+		instruction : in  std_logic_vector(WIDTH - 1 downto 0);
+		reset       : in  std_logic;
+		clock       : in  std_logic;
 
-		outval      : out std_ulogic_vector(WIDTH - 1 downto 0)
+		outval      : out std_logic_vector(WIDTH - 1 downto 0)
 	);
 end ProgramCounter;
 
 architecture Behavioral of ProgramCounter is
-	signal outval_s : std_ulogic_vector(WIDTH - 1 downto 0);
-	signal jump     : std_ulogic_vector(2 downto 0);
+	signal outval_s : std_logic_vector(WIDTH - 1 downto 0);
+	signal jump     : std_logic_vector(2 downto 0);
 
 begin
 	outval <= outval_s;
@@ -34,10 +34,10 @@ begin
 					if (jump(2) = '1' and signed(comp) < 0) or (jump(1) = '1' and signed(comp) = 0) or (jump(0) = '1' and signed(comp) > 0) then
 						outval_s <= inval(WIDTH - 1 downto 0);
 					else
-						outval_s <= std_ulogic_vector(unsigned(outval_s) + 1);
+						outval_s <= std_logic_vector(unsigned(outval_s) + 1);
 					end if;
 				else
-					outval_s <= std_ulogic_vector(unsigned(outval_s) + 1);
+					outval_s <= std_logic_vector(unsigned(outval_s) + 1);
 				end if;
 			end if;
 		end if;

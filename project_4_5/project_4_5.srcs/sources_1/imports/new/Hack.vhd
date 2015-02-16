@@ -9,18 +9,18 @@ use IEEE.NUMERIC_STD.ALL;
 -- memory blocks.
 entity Hack is
 	Port(
-		reset : in std_ulogic;
-		clock : in std_ulogic
+		reset : in std_logic;
+		clock : in std_logic
 	);
 end Hack;
 
 architecture Behavioral of Hack is
-	signal inM         : std_ulogic_vector(15 downto 0);
-	signal instruction : std_ulogic_vector(15 downto 0);
-	signal outM        : std_ulogic_vector(15 downto 0);
-	signal writeM      : std_ulogic;
-	signal addressM    : std_ulogic_vector(9 downto 0);
-	signal pc          : std_ulogic_vector(9 downto 0);
+	signal inM         : std_logic_vector(15 downto 0);
+	signal instruction : std_logic_vector(15 downto 0);
+	signal outM        : std_logic_vector(15 downto 0);
+	signal writeM      : std_logic;
+	signal addressM    : std_logic_vector(9 downto 0);
+	signal pc          : std_logic_vector(9 downto 0);
 begin
 	CPU_inst : entity work.CPU(Behavioral)
 		port map(

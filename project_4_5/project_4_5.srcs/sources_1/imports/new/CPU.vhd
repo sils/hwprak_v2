@@ -5,25 +5,25 @@ use IEEE.NUMERIC_STD.ALL;
 entity CPU is
 	generic(
 		WIDTH         : integer := 16;
-		ADDRESS_WIDTH : integer := 10
+		ADDRESS_WIDTH : integer := 15
 	);
 	Port(
-		inM          : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		instruction  : in  std_ulogic_vector(WIDTH - 1 downto 0);
-		reset        : in  std_ulogic;
-		outM         : out std_ulogic_vector(WIDTH - 1 downto 0);
-		writeM       : out std_ulogic;
-		addressM_out : out std_ulogic_vector(ADDRESS_WIDTH - 1 downto 0);
-		pc           : out std_ulogic_vector(ADDRESS_WIDTH - 1 downto 0);
-		clock        : in  std_ulogic
+		inM          : in  std_logic_vector(WIDTH - 1 downto 0);
+		instruction  : in  std_logic_vector(WIDTH - 1 downto 0);
+		reset        : in  std_logic;
+		outM         : out std_logic_vector(WIDTH - 1 downto 0);
+		writeM       : out std_logic;
+		addressM_out : out std_logic_vector(ADDRESS_WIDTH - 1 downto 0);
+		pc           : out std_logic_vector(ADDRESS_WIDTH - 1 downto 0);
+		clock        : in  std_logic
 	);
 end CPU;
 
 architecture Behavioral of CPU is
-	signal comp, ins_val_mux_out, pc_s, addressM : std_ulogic_vector(WIDTH - 1 downto 0);
-	signal D                                     : std_ulogic_vector(WIDTH - 1 downto 0) := (others => '0');
-	signal A_or_M                                : std_ulogic_vector(WIDTH - 1 downto 0) := (others => '0');
-	signal A_set, write_D                        : std_ulogic;
+	signal comp, ins_val_mux_out, pc_s, addressM : std_logic_vector(WIDTH - 1 downto 0);
+	signal D                                     : std_logic_vector(WIDTH - 1 downto 0) := (others => '0');
+	signal A_or_M                                : std_logic_vector(WIDTH - 1 downto 0) := (others => '0');
+	signal A_set, write_D                        : std_logic;
 begin
 	our_beloved_ALU : entity work.ALU(Behavioral)
 		generic map(

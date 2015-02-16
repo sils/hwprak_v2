@@ -12,9 +12,9 @@ use std.textio.all;
 
 entity BRAM is
 	generic(
-		MEM_ADDR_WIDTH 	: integer :=  8;
-		MEM_DATA_WIDTH 	: integer := 32;
-		EDGE_TYPE		: boolean := true; -- true = rising edge, false = falling edge
+		MEM_ADDR_WIDTH 	: integer :=  10;
+		MEM_DATA_WIDTH 	: integer := 16;
+		EDGE_TYPE		: boolean := false; -- true = rising edge, false = falling edge
 		MEM_NAME 		: string := "ram.mem"
 	);
 	port (

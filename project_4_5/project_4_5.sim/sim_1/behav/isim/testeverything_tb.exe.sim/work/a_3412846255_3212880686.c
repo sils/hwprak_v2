@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//nap.rz.tu-harburg.de/fs2$/19/sils1297/windows/hwprak/task_3/task_3.srcs/sources_1/new/tri-state.vhd";
+static const char *ng0 = "//nap.rz.tu-harburg.de/fs1$/18/sims1301/windows/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/tri-state.vhd";
 
 
 
