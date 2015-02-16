@@ -24,7 +24,6 @@ begin
 	begin
 		c1_6 <= c(11 downto 6);
 		case c1_6 is
-			when "101010" => comp <= (others => '0');
 			when "111111" => comp <= std_ulogic_vector(to_unsigned(1, WIDTH));
 			when "111010" => comp <= (others => '1');
 			when "001100" => comp <= register_D;
