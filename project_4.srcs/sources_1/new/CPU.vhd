@@ -21,9 +21,9 @@ end CPU;
 
 architecture Behavioral of CPU is
 	signal comp, ins_val_mux_out, pc_s, addressM : std_ulogic_vector(WIDTH - 1 downto 0);
-	signal D: std_ulogic_vector(WIDTH-1 downto 0) := (others => '0');
-	signal A_or_M: std_ulogic_vector(WIDTH-1 downto 0) := (others => '0');
-	signal A_set: std_ulogic;
+	signal D                                     : std_ulogic_vector(WIDTH - 1 downto 0) := (others => '0');
+	signal A_or_M                                : std_ulogic_vector(WIDTH - 1 downto 0) := (others => '0');
+	signal A_set, write_D                        : std_ulogic;
 begin
 	our_beloved_ALU : entity work.ALU(Behavioral)
 		generic map(
@@ -37,7 +37,7 @@ begin
 			comp       => comp
 		);
 
-	A_set <= '1' when instruction(5) = '1' or instruction(WIDTH-1) = '0' else '0';
+	A_set <= '1' when instruction(5) = '1' or instruction(WIDTH - 1) = '0' else '0';
 	register_A : entity work.SimpleRegister(Behavioral)
 		generic map(
 			WIDTH => WIDTH
@@ -50,6 +50,7 @@ begin
 			reset  => reset
 		);
 
+	write_D <= instruction(4) when instruction(WIDTH-1) = '1' else '0';
 	register_D : entity work.SimpleRegister(Behavioral)
 		generic map(
 			WIDTH => WIDTH
@@ -57,7 +58,7 @@ begin
 		port map(
 			inval  => comp,
 			outval => D,
-			set    => instruction(4),
+			set    => write_D,
 			clock  => clock,
 			reset  => reset
 		);
@@ -89,16 +90,16 @@ begin
 			WIDTH => WIDTH
 		)
 		port map(
-			inval  => addressM,
-			comp   => comp,
-			jump   => instruction(2 downto 0),
-			reset  => reset,
-			clock  => clock,
-			outval => pc_s
+			inval       => addressM,
+			comp        => comp,
+			instruction => instruction,
+			reset       => reset,
+			clock       => clock,
+			outval      => pc_s
 		);
 
-	pc <= pc_s(ADDRESS_WIDTH-1 downto 0);
-	addressM_out <= addressM(ADDRESS_WIDTH-1 downto 0);
-	outM <= comp;
-	writeM <= instruction(3);
+	pc           <= pc_s(ADDRESS_WIDTH - 1 downto 0);
+	addressM_out <= addressM(ADDRESS_WIDTH - 1 downto 0);
+	outM         <= comp;
+	writeM       <= instruction(3);
 end Behavioral;

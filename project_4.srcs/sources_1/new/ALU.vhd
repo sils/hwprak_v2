@@ -19,10 +19,10 @@ end ALU;
 architecture Behavioral of ALU is
 	signal c1_6 : std_ulogic_vector(5 downto 0);
 begin
-	c1_6 <= c(11 downto 6);
 
-	ALU_operation : process(clock)
+	ALU_operation : process(register_D, A_or_M, c, clock)
 	begin
+		c1_6 <= c(11 downto 6);
 		case c1_6 is
 			when "101010" => comp <= (others => '0');
 			when "111111" => comp <= std_ulogic_vector(to_unsigned(1, WIDTH));
