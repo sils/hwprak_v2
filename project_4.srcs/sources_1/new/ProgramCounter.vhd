@@ -27,12 +27,14 @@ begin
 		if reset = '1' then
 			outval_s <= (others => '0');
 		else
-			if (jump(0) = '1' and signed(comp) < 0) or
-			   (jump(1) = '1' and signed(comp) = 0) or
-			   (jump(2) = '1' and signed(comp) > 0) then
-				outval_s <= inval(WIDTH-1 downto 0);
-			else
-				outval_s <= std_ulogic_vector(unsigned(outval_s) + 1);
+			if rising_edge(clock) then
+				if (jump(0) = '1' and signed(comp) < 0) or
+				   (jump(1) = '1' and signed(comp) = 0) or
+				   (jump(2) = '1' and signed(comp) > 0) then
+					outval_s <= inval(WIDTH-1 downto 0);
+				else
+					outval_s <= std_ulogic_vector(unsigned(outval_s) + 1);
+				end if;
 			end if;
 		end if;
 	end process;

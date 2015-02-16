@@ -34,7 +34,7 @@ char *ieee_p_2592010699_sub_393209765_503743352(char *, char *, char *, char *);
 int ieee_p_3620187407_sub_514432868_3965413181(char *, char *, char *);
 
 
-char *work_a_3045876671_3212880686_sub_2772016641_3057020925(char *t1, char *t2, char *t3)
+char *work_a_1077085460_3212880686_sub_2772016641_3057020925(char *t1, char *t2, char *t3)
 {
     char t4[208];
     char t5[24];
@@ -208,7 +208,7 @@ LAB9:    xsi_size_not_matching(16384U, 16384U, 0);
 LAB11:;
 }
 
-static void work_a_3045876671_3212880686_p_0(char *t0)
+static void work_a_1077085460_3212880686_p_0(char *t0)
 {
     char t7[16];
     char t25[16];
@@ -437,11 +437,11 @@ LAB23:    xsi_size_not_matching(16U, t19, 0);
 }
 
 
-extern void work_a_3045876671_3212880686_init()
+extern void work_a_1077085460_3212880686_init()
 {
-	static char *pe[] = {(void *)work_a_3045876671_3212880686_p_0};
-	static char *se[] = {(void *)work_a_3045876671_3212880686_sub_2772016641_3057020925};
-	xsi_register_didat("work_a_3045876671_3212880686", "isim/tb_hack.exe.sim/work/a_3045876671_3212880686.didat");
+	static char *pe[] = {(void *)work_a_1077085460_3212880686_p_0};
+	static char *se[] = {(void *)work_a_1077085460_3212880686_sub_2772016641_3057020925};
+	xsi_register_didat("work_a_1077085460_3212880686", "isim/tb_hack.exe.sim/work/a_1077085460_3212880686.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }

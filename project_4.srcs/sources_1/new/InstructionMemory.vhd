@@ -21,7 +21,7 @@ begin
 		generic map(MEM_ADDR_WIDTH => 10,
 			        MEM_DATA_WIDTH => 16,
 			        EDGE_TYPE      => false,
-			        MEM_NAME       => "H:\HWPrak14\task_4\PWM1_short.hack")
+			        MEM_NAME       => "H:\Xilinx\project_4\ggt.hack")
 		port map(Clock       => clock,
 			     WriteEnable => '0',
 			     Address     => std_logic_vector(pc),

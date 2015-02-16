@@ -40,7 +40,7 @@ int main(int argc, char **argv)
     std_textio_init();
     work_a_3864334581_3212880686_init();
     work_a_3261551314_3212880686_init();
-    work_a_3045876671_3212880686_init();
+    work_a_1077085460_3212880686_init();
     work_a_0123541133_3212880686_init();
     work_a_2900131918_3212880686_init();
     work_a_0029934258_3212880686_init();

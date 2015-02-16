@@ -29,7 +29,7 @@ Compiling package std_logic_unsigned
 Compiling package textio
 Compiling architecture behavioral of entity BRAM [\BRAM(10,16,false,"H:\\HWPrak14\...]
 Compiling architecture behavioral of entity DataMemory [datamemory_default]
-Compiling architecture behavioral of entity BRAM [\BRAM(10,16,false,"H:\\HWPrak14\...]
+Compiling architecture behavioral of entity BRAM [\BRAM(10,16,false,"H:\\Xilinx\\p...]
 Compiling architecture behavioral of entity InstructionMemory [instructionmemory_default]
 Compiling architecture behavioral of entity Hack [hack_default]
 Compiling architecture behavioral of entity tb_hack
@@ -38,4 +38,4 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 27 VHDL Units
 Built simulation executable tb_hack.exe
 Fuse Memory Usage: 41396 KB
-Fuse CPU Usage: 841 ms
+Fuse CPU Usage: 763 ms

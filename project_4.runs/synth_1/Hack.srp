@@ -113,11 +113,6 @@ WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/Regis
 Elaborating entity <Mux> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <ProgramCounter> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 30: jump should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 31: jump should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 32: jump should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 33: inval should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd" Line 35: outval_s should be on the sensitivity list of the process
 
 Elaborating entity <DataMemory> (architecture <Behavioral>) from library <work>.
 
@@ -168,9 +163,9 @@ Unit <Mux> synthesized.
 Synthesizing Unit <ProgramCounter>.
     Related source file is "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ProgramCounter.vhd".
         WIDTH = 16
-WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <outval_s>.
     Summary:
-	no macro.
+	inferred  16 D-type flip-flop(s).
 Unit <ProgramCounter> synthesized.
 
 Synthesizing Unit <BRAM_1>.
@@ -206,7 +201,7 @@ Synthesizing Unit <BRAM_2>.
         MEM_ADDR_WIDTH = 10
         MEM_DATA_WIDTH = 16
         EDGE_TYPE = false
-        MEM_NAME = "H:\HWPrak14\task_4\PWM1_short.hack"
+        MEM_NAME = "H:\Xilinx\project_4\ggt.hack"
     Found 1024x16-bit single-port RAM <Mram_Ram> for signal <Ram>.
     Found 1-bit register for signal <ReadData<15>>.
     Found 1-bit register for signal <ReadData<14>>.
@@ -351,13 +346,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.70 secs
+Total CPU time to Xst completion: 4.88 secs
  
 --> 
 
-Total memory usage is 262884 kilobytes
+Total memory usage is 263720 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   29 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
