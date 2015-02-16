@@ -30,7 +30,6 @@ begin
 			WIDTH => WIDTH
 		)
 		port map(
-			clock      => clock,
 			register_D => D,
 			A_or_M     => A_or_M,
 			c          => instruction,
@@ -101,5 +100,5 @@ begin
 	pc           <= pc_s(ADDRESS_WIDTH - 1 downto 0);
 	addressM_out <= addressM(ADDRESS_WIDTH - 1 downto 0);
 	outM         <= comp;
-	writeM       <= instruction(3);
+	writeM       <= instruction(3) when instruction(WIDTH-1) = '1' else '0';
 end Behavioral;

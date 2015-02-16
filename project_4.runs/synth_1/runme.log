@@ -44,7 +44,6 @@ Elaborating entity <Hack> (architecture <Behavioral>) from library <work>.
 Elaborating entity <CPU> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <ALU> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "H:/Xilinx/project_4/project_4.srcs/sources_1/new/ALU.vhd" Line 26: c1_6 should be on the sensitivity list of the process
 
 Elaborating entity <SimpleRegister> (architecture <Behavioral>) with generics from library <work>.
 
@@ -78,7 +77,6 @@ Synthesizing Unit <ALU>.
         WIDTH = 16
 WARNING:Xst:647 - Input <c<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <c<15:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <ALU> synthesized.

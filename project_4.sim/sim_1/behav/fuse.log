@@ -37,5 +37,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 27 VHDL Units
 Built simulation executable tb_hack.exe
-Fuse Memory Usage: 41392 KB
-Fuse CPU Usage: 639 ms
+Fuse Memory Usage: 41372 KB
+Fuse CPU Usage: 701 ms
