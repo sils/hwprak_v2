@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sim_1/new/ads7830.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sim_1/new/ads7830.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sim_1/new/testeverything.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sim_1/new/testeverything.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="testeverything_tb"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sim_1/new/testeverything.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="SrcSet" Val="sources_1"/>
+    </Config>
+  </FileSet>
+</DARoots>
