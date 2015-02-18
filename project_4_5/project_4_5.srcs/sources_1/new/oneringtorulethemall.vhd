@@ -47,9 +47,9 @@ architecture Behavioral of unite is
 	signal I2CReadRegisterOut    : std_logic_vector(15 downto 0) := "0000000000000000";
 	signal I2CReadRegisterEnable : std_logic;
 begin
-	selectDestination(0) <= '1' when (writeM = '1' and adressM = "000010000000000") else '0';
-	selectDestination(1) <= '1' when (adressM = x"401") else '0';
-	selectDestination(2) <= '1' when (adressM = x"402") else '0';
+	selectDestination(0) <= '1' when (writeM = '1' and adressM = "000010000000000") else '0'; --0x400
+	selectDestination(1) <= '1' when (adressM = "000010000000001") else '0'; --0x401
+	selectDestination(2) <= '1' when (adressM = "000010000000010") else '0'; --0x402
 	selectDestination(3) <= writeM when (selectDestination(2 downto 0) = "000") else '0';
 
 	pwm : entity work.LEDPWM(Behavioral)

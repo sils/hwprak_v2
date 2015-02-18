@@ -2,8 +2,8 @@ Release 14.6 - xst P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: unite.prj
 
@@ -92,8 +92,6 @@ Parsing architecture <Behavioral> of entity <unite>.
 =========================================================================
 
 Elaborating entity <unite> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:321 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" Line 51: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" Line 52: Comparison between arrays of unequal length always returns FALSE.
 
 Elaborating entity <LEDPWM> (architecture <Behavioral>) with generics from library <work>.
 
@@ -253,7 +251,7 @@ Synthesizing Unit <Mux>.
     Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Mux.vhd".
         WIDTH = 16
     Summary:
-	no macro.
+	inferred   1 Multiplexer(s).
 Unit <Mux> synthesized.
 
 Synthesizing Unit <i2c_master_byte_ctrl>.
@@ -365,11 +363,11 @@ Macro Statistics
 # Comparators                                          : 3
  16-bit comparator greater                             : 2
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 87
+# Multiplexers                                         : 88
  1-bit 2-to-1 multiplexer                              : 36
  1-bit 3-to-1 multiplexer                              : 2
  14-bit 2-to-1 multiplexer                             : 1
- 16-bit 2-to-1 multiplexer                             : 38
+ 16-bit 2-to-1 multiplexer                             : 39
  4-bit 2-to-1 multiplexer                              : 8
  4-bit 6-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 1
@@ -453,10 +451,10 @@ Macro Statistics
 # Comparators                                          : 3
  16-bit comparator greater                             : 2
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 90
+# Multiplexers                                         : 91
  1-bit 2-to-1 multiplexer                              : 42
  1-bit 3-to-1 multiplexer                              : 2
- 16-bit 2-to-1 multiplexer                             : 37
+ 16-bit 2-to-1 multiplexer                             : 38
  4-bit 2-to-1 multiplexer                              : 8
  4-bit 6-to-1 multiplexer                              : 1
 # FSMs                                                 : 2
@@ -466,7 +464,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2973 - All outputs of instance <I2CAckRegister> of block <SimpleRegister> are unconnected in block <unite>. Underlying logic will be removed.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <i2c/FSM_0> on signal <statemachine.c_state[1:3]> with user encoding.
 ----------------------
@@ -519,6 +516,21 @@ Optimizing unit <ProgramCounter> ...
 Optimizing unit <i2c_master_byte_ctrl> ...
 
 Optimizing unit <i2c_master_bit_ctrl> ...
+WARNING:Xst:1710 - FF/Latch <I2CAckRegister/outval_15> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_13> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_12> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_11> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_10> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_9> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_8> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_7> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_6> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_5> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_4> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_3> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_2> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_1> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CAckRegister/outval_0> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_15> of sequential type is unconnected in block <unite>.
 WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_14> of sequential type is unconnected in block <unite>.
 WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_13> of sequential type is unconnected in block <unite>.
@@ -566,8 +578,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 137
- Flip-Flops                                            : 137
+# Registers                                            : 138
+ Flip-Flops                                            : 138
 
 =========================================================================
 
@@ -590,23 +602,23 @@ Top Level Output File Name         : unite.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 421
-#      GND                         : 6
+# BELS                             : 427
+#      GND                         : 7
 #      INV                         : 15
 #      LUT1                        : 18
 #      LUT2                        : 24
-#      LUT3                        : 49
-#      LUT4                        : 43
-#      LUT5                        : 49
-#      LUT6                        : 120
+#      LUT3                        : 35
+#      LUT4                        : 47
+#      LUT5                        : 63
+#      LUT6                        : 119
 #      MUXCY                       : 43
-#      MUXF7                       : 1
-#      VCC                         : 5
+#      MUXF7                       : 2
+#      VCC                         : 6
 #      XORCY                       : 48
-# FlipFlops/Latches                : 137
+# FlipFlops/Latches                : 138
 #      FD                          : 11
 #      FDC                         : 10
-#      FDCE                        : 53
+#      FDCE                        : 54
 #      FDE                         : 9
 #      FDR                         : 32
 #      FDRE                        : 10
@@ -628,16 +640,16 @@ Selected Device : 6slx9csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             137  out of  11440     1%  
- Number of Slice LUTs:                  318  out of   5720     5%  
-    Number used as Logic:               318  out of   5720     5%  
+ Number of Slice Registers:             138  out of  11440     1%  
+ Number of Slice LUTs:                  321  out of   5720     5%  
+    Number used as Logic:               321  out of   5720     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    385
-   Number with an unused Flip Flop:     248  out of    385    64%  
-   Number with an unused LUT:            67  out of    385    17%  
-   Number of fully used LUT-FF pairs:    70  out of    385    18%  
-   Number of unique control sets:        20
+ Number of LUT Flip Flop pairs used:    389
+   Number with an unused Flip Flop:     251  out of    389    64%  
+   Number with an unused LUT:            68  out of    389    17%  
+   Number of fully used LUT-FF pairs:    70  out of    389    17%  
+   Number of unique control sets:        21
 
 IO Utilization: 
  Number of IOs:                           8
@@ -669,7 +681,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK_66MHZ                          | BUFGP                  | 139   |
+CLK_66MHZ                          | BUFGP                  | 140   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -680,7 +692,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 24.562ns (Maximum Frequency: 40.714MHz)
+   Minimum period: 24.472ns (Maximum Frequency: 40.864MHz)
    Minimum input arrival time before clock: 6.629ns
    Maximum output required time after clock: 8.876ns
    Maximum combinational path delay: No path found
@@ -691,10 +703,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_66MHZ'
-  Clock period: 24.562ns (frequency: 40.714MHz)
-  Total number of paths / destination ports: 697742 / 291
+  Clock period: 24.472ns (frequency: 40.864MHz)
+  Total number of paths / destination ports: 923556 / 293
 -------------------------------------------------------------------------
-Delay:               12.281ns (Levels of Logic = 15)
+Delay:               12.236ns (Levels of Logic = 15)
   Source:            instructionMem/Mram_Ram (RAM)
   Destination:       cpu/register_PC/outval_s_9 (FF)
   Source Clock:      CLK_66MHZ falling
@@ -704,13 +716,13 @@ Delay:               12.281ns (Levels of Logic = 15)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA9   23   2.100   1.813  Mram_Ram (ReadData<9>)
+     RAMB16BWER:CLKA->DOA9   24   2.100   1.835  Mram_Ram (ReadData<9>)
      end scope: 'instructionMem:ReadData<9>'
      begin scope: 'cpu:instruction<9>'
      begin scope: 'cpu/our_beloved_ALU:c<9>'
      LUT6:I0->O           15   0.254   1.383  Mmux_g_comp_A1121 (Mmux_g_comp_A112)
-     LUT5:I2->O            1   0.235   0.958  Mmux_g_comp_A311 (Mmux_g_comp_A31)
-     LUT6:I2->O            1   0.254   0.682  Mmux_g_comp_A321 (Mmux_g_comp_rs_A<1>)
+     LUT5:I2->O            1   0.235   0.910  Mmux_g_comp_A311 (Mmux_g_comp_A31)
+     LUT6:I3->O            1   0.235   0.682  Mmux_g_comp_A321 (Mmux_g_comp_rs_A<1>)
      LUT6:I5->O            1   0.254   0.000  Mmux_g_comp_rs_lut<1> (Mmux_g_comp_rs_lut<1>)
      MUXCY:S->O            1   0.215   0.000  Mmux_g_comp_rs_cy<1> (Mmux_g_comp_rs_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  Mmux_g_comp_rs_cy<2> (Mmux_g_comp_rs_cy<2>)
@@ -724,7 +736,7 @@ Delay:               12.281ns (Levels of Logic = 15)
      LUT6:I5->O            1   0.254   0.000  Mmux_outval_s[15]_outval_s[15]_mux_8_OUT18 (outval_s[15]_outval_s[15]_mux_8_OUT<0>)
      FDC:D                     0.074          outval_s_0
     ----------------------------------------
-    Total                     12.281ns (4.424ns logic, 7.857ns route)
+    Total                     12.236ns (4.405ns logic, 7.831ns route)
                                        (36.0% logic, 64.0% route)
 
 =========================================================================
@@ -784,20 +796,20 @@ Clock to Setup on destination clock CLK_66MHZ
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_66MHZ      |    9.708|   12.281|   10.503|         |
+CLK_66MHZ      |   12.504|   12.236|   10.782|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.38 secs
+Total CPU time to Xst completion: 9.38 secs
  
 --> 
 
-Total memory usage is 267432 kilobytes
+Total memory usage is 267944 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   44 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 
