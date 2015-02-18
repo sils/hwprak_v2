@@ -42,5 +42,5 @@ Compiling architecture behavioral of entity testeverything_tb
 Time Resolution for simulation is 1ps.
 Compiled 37 VHDL Units
 Built simulation executable testeverything_tb.exe
-Fuse Memory Usage: 43224 KB
-Fuse CPU Usage: 1060 ms
+Fuse Memory Usage: 43252 KB
+Fuse CPU Usage: 950 ms

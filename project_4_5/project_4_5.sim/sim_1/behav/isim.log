@@ -22,9 +22,11 @@ Simulator is doing circuit initialization process.
 at 0 ps, Instance /testeverything_tb/united/pwm/ : Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
 at 0 ps, Instance /testeverything_tb/united/i2c/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
+at 7575 ps(1), Instance /testeverything_tb/united/pwm/ : Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
 # restart
 # run 1.00ms
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /testeverything_tb/united/pwm/ : Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
 at 0 ps, Instance /testeverything_tb/united/i2c/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
+at 7575 ps(1), Instance /testeverything_tb/united/pwm/ : Warning: NUMERIC_STD.">": metavalue detected, returning FALSE

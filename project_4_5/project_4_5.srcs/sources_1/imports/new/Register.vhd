@@ -17,13 +17,15 @@ end SimpleRegister;
 
 architecture Behavioral of SimpleRegister is
 begin
-	process(set, inval, clock, reset)
+	process(clock)
 	begin
-		if reset = '1' then
-			outval <= (others => '0');
-		else
-			if set = '1' and rising_edge(clock) then
-				outval <= inval;
+		if rising_edge(clock) then
+			if reset = '1' then
+				outval <= (others => '0');
+			else
+				if set = '1' then
+					outval <= inval;
+				end if;
 			end if;
 		end if;
 	end process;

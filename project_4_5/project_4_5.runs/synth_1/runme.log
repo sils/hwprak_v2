@@ -355,24 +355,6 @@ INFO:Xst:3226 - The RAM <Mram_Ram> will be implemented as a BLOCK RAM, absorbing
     -----------------------------------------------------------------------
 Unit <BRAM_1> synthesized (advanced).
 
-Synthesizing (advanced) Unit <BRAM_2>.
-INFO:Xst:3226 - The RAM <Mram_Ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <ReadData>
-    -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 1024-word x 16-bit                  |          |
-    |     mode           | read-first                          |          |
-    |     clkA           | connected to signal <Clock>         | fall     |
-    |     weA            | connected to signal <WriteEnable>   | high     |
-    |     addrA          | connected to signal <Address>       |          |
-    |     diA            | connected to signal <WriteData>     |          |
-    |     doA            | connected to signal <ReadData>      |          |
-    -----------------------------------------------------------------------
-    | optimization       | speed                               |          |
-    -----------------------------------------------------------------------
-Unit <BRAM_2> synthesized (advanced).
-
 Synthesizing (advanced) Unit <LEDPWM>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <LEDPWM> synthesized (advanced).
@@ -385,6 +367,24 @@ Unit <i2c_master_bit_ctrl> synthesized (advanced).
 Synthesizing (advanced) Unit <i2c_master_byte_ctrl>.
 The following registers are absorbed into counter <dcnt>: 1 register on signal <dcnt>.
 Unit <i2c_master_byte_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <unite>.
+INFO:Xst:3226 - The RAM <DataMem/Mram_Ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <DataMem/ReadData>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_66MHZ>     | fall     |
+    |     weA            | connected to signal <selectDestination<3>> | high     |
+    |     addrA          | connected to signal <adressM<9:0>>  |          |
+    |     diA            | connected to signal <outM>          |          |
+    |     doA            | connected to signal <inMMem>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <unite> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -455,13 +455,9 @@ Optimizing FSM <i2c/bit_ctrl/FSM_1> on signal <c_state[1:5]> with user encoding.
  wr_d    | 10001
 ---------------------
 
-Optimizing unit <SimpleRegister_1> ...
-
 Optimizing unit <SimpleRegister> ...
 
 Optimizing unit <unite> ...
-
-Optimizing unit <CPU> ...
 
 Optimizing unit <ALU> ...
 
@@ -568,7 +564,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 24.472ns (Maximum Frequency: 40.864MHz)
+   Minimum period: 24.660ns (Maximum Frequency: 40.552MHz)
    Minimum input arrival time before clock: 6.629ns
    Maximum output required time after clock: 8.876ns
    Maximum combinational path delay: No path found

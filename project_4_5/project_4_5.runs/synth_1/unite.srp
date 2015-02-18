@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: unite.prj
 
@@ -401,24 +401,6 @@ INFO:Xst:3226 - The RAM <Mram_Ram> will be implemented as a BLOCK RAM, absorbing
     -----------------------------------------------------------------------
 Unit <BRAM_1> synthesized (advanced).
 
-Synthesizing (advanced) Unit <BRAM_2>.
-INFO:Xst:3226 - The RAM <Mram_Ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <ReadData>
-    -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 1024-word x 16-bit                  |          |
-    |     mode           | read-first                          |          |
-    |     clkA           | connected to signal <Clock>         | fall     |
-    |     weA            | connected to signal <WriteEnable>   | high     |
-    |     addrA          | connected to signal <Address>       |          |
-    |     diA            | connected to signal <WriteData>     |          |
-    |     doA            | connected to signal <ReadData>      |          |
-    -----------------------------------------------------------------------
-    | optimization       | speed                               |          |
-    -----------------------------------------------------------------------
-Unit <BRAM_2> synthesized (advanced).
-
 Synthesizing (advanced) Unit <LEDPWM>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <LEDPWM> synthesized (advanced).
@@ -431,6 +413,24 @@ Unit <i2c_master_bit_ctrl> synthesized (advanced).
 Synthesizing (advanced) Unit <i2c_master_byte_ctrl>.
 The following registers are absorbed into counter <dcnt>: 1 register on signal <dcnt>.
 Unit <i2c_master_byte_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <unite>.
+INFO:Xst:3226 - The RAM <DataMem/Mram_Ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <DataMem/ReadData>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_66MHZ>     | fall     |
+    |     weA            | connected to signal <selectDestination<3>> | high     |
+    |     addrA          | connected to signal <adressM<9:0>>  |          |
+    |     diA            | connected to signal <outM>          |          |
+    |     doA            | connected to signal <inMMem>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <unite> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -501,13 +501,9 @@ Optimizing FSM <i2c/bit_ctrl/FSM_1> on signal <c_state[1:5]> with user encoding.
  wr_d    | 10001
 ---------------------
 
-Optimizing unit <SimpleRegister_1> ...
-
 Optimizing unit <SimpleRegister> ...
 
 Optimizing unit <unite> ...
-
-Optimizing unit <CPU> ...
 
 Optimizing unit <ALU> ...
 
@@ -602,26 +598,25 @@ Top Level Output File Name         : unite.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 427
-#      GND                         : 7
+# BELS                             : 426
+#      GND                         : 6
 #      INV                         : 15
 #      LUT1                        : 18
 #      LUT2                        : 24
-#      LUT3                        : 35
+#      LUT3                        : 34
 #      LUT4                        : 47
-#      LUT5                        : 63
-#      LUT6                        : 119
+#      LUT5                        : 62
+#      LUT6                        : 122
 #      MUXCY                       : 43
-#      MUXF7                       : 2
+#      MUXF7                       : 1
 #      VCC                         : 6
 #      XORCY                       : 48
 # FlipFlops/Latches                : 138
 #      FD                          : 11
 #      FDC                         : 10
-#      FDCE                        : 54
 #      FDE                         : 9
 #      FDR                         : 32
-#      FDRE                        : 10
+#      FDRE                        : 64
 #      FDS                         : 4
 #      FDSE                        : 8
 # RAMS                             : 2
@@ -641,14 +636,14 @@ Selected Device : 6slx9csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             138  out of  11440     1%  
- Number of Slice LUTs:                  321  out of   5720     5%  
-    Number used as Logic:               321  out of   5720     5%  
+ Number of Slice LUTs:                  322  out of   5720     5%  
+    Number used as Logic:               322  out of   5720     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    389
-   Number with an unused Flip Flop:     251  out of    389    64%  
-   Number with an unused LUT:            68  out of    389    17%  
-   Number of fully used LUT-FF pairs:    70  out of    389    17%  
+ Number of LUT Flip Flop pairs used:    390
+   Number with an unused Flip Flop:     252  out of    390    64%  
+   Number with an unused LUT:            68  out of    390    17%  
+   Number of fully used LUT-FF pairs:    70  out of    390    17%  
    Number of unique control sets:        21
 
 IO Utilization: 
@@ -692,7 +687,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 24.472ns (Maximum Frequency: 40.864MHz)
+   Minimum period: 24.660ns (Maximum Frequency: 40.552MHz)
    Minimum input arrival time before clock: 6.629ns
    Maximum output required time after clock: 8.876ns
    Maximum combinational path delay: No path found
@@ -703,10 +698,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_66MHZ'
-  Clock period: 24.472ns (frequency: 40.864MHz)
-  Total number of paths / destination ports: 923556 / 293
+  Clock period: 24.660ns (frequency: 40.552MHz)
+  Total number of paths / destination ports: 941844 / 293
 -------------------------------------------------------------------------
-Delay:               12.236ns (Levels of Logic = 15)
+Delay:               12.330ns (Levels of Logic = 15)
   Source:            instructionMem/Mram_Ram (RAM)
   Destination:       cpu/register_PC/outval_s_9 (FF)
   Source Clock:      CLK_66MHZ falling
@@ -720,8 +715,8 @@ Delay:               12.236ns (Levels of Logic = 15)
      end scope: 'instructionMem:ReadData<9>'
      begin scope: 'cpu:instruction<9>'
      begin scope: 'cpu/our_beloved_ALU:c<9>'
-     LUT6:I0->O           15   0.254   1.383  Mmux_g_comp_A1121 (Mmux_g_comp_A112)
-     LUT5:I2->O            1   0.235   0.910  Mmux_g_comp_A311 (Mmux_g_comp_A31)
+     LUT6:I0->O           16   0.254   1.458  Mmux_g_comp_B2101 (Mmux_g_comp_B210)
+     LUT6:I2->O            1   0.254   0.910  Mmux_g_comp_A312 (Mmux_g_comp_A311)
      LUT6:I3->O            1   0.235   0.682  Mmux_g_comp_A321 (Mmux_g_comp_rs_A<1>)
      LUT6:I5->O            1   0.254   0.000  Mmux_g_comp_rs_lut<1> (Mmux_g_comp_rs_lut<1>)
      MUXCY:S->O            1   0.215   0.000  Mmux_g_comp_rs_cy<1> (Mmux_g_comp_rs_cy<1>)
@@ -736,8 +731,8 @@ Delay:               12.236ns (Levels of Logic = 15)
      LUT6:I5->O            1   0.254   0.000  Mmux_outval_s[15]_outval_s[15]_mux_8_OUT18 (outval_s[15]_outval_s[15]_mux_8_OUT<0>)
      FDC:D                     0.074          outval_s_0
     ----------------------------------------
-    Total                     12.236ns (4.405ns logic, 7.831ns route)
-                                       (36.0% logic, 64.0% route)
+    Total                     12.330ns (4.424ns logic, 7.906ns route)
+                                       (35.9% logic, 64.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_66MHZ'
@@ -796,18 +791,18 @@ Clock to Setup on destination clock CLK_66MHZ
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_66MHZ      |   12.504|   12.236|   10.782|         |
+CLK_66MHZ      |   12.597|   12.330|   10.782|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.38 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.14 secs
  
 --> 
 
-Total memory usage is 267944 kilobytes
+Total memory usage is 268200 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   56 (   0 filtered)
