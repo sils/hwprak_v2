@@ -154,6 +154,7 @@ begin
 			outval => duty_cycle
 		);
 
+
 	i2c : entity work.i2c_master_byte_ctrl(structural)
 		port map(
 			clk      => CLK_66MHZ,

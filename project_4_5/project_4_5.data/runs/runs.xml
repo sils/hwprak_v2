@@ -9,6 +9,31 @@
 		<File Type="PA-XSTPRJ" Name="unite.prj"/>
 		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
 	</Run>
-	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc6slx9csg324-2" ConstrsSet="constrs_1" Description="ISE Defaults, including packing registers in IOs off" State="current"/>
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc6slx9csg324-2" LaunchPart="xc6slx9csg324-2" ConstrsSet="constrs_1" Description="ISE Defaults, including packing registers in IOs off" State="current" Dir="$PRUNDIR/impl_1" LaunchTime="1424255551">
+		<File Type="MAP-PSR" Name="unite.psr"/>
+		<File Type="PA-EDIF" Name="unite.edf"/>
+		<File Type="PAR-NCD" Name="unite_routed.ncd"/>
+		<File Type="PA-UCF" Name="unite.ucf"/>
+		<File Type="PAR-PAD" Name="unite_routed_pad.txt"/>
+		<File Type="PAR-PAR" Name="unite_routed.par"/>
+		<File Type="PAR-UNR" Name="unite_routed.unroutes"/>
+		<File Type="BG-BIT" Name="unite.bit"/>
+		<File Type="BG-DRC" Name="unite.drc"/>
+		<File Type="PA-CONSTRSDIR" Name=".constrs"/>
+		<File Type="BG-BGN" Name="unite.bgn"/>
+		<File Type="TRCE-TWR" Name="unite.twr"/>
+		<File Type="TRCE-TWX" Name="unite.twx"/>
+		<File Type="XDL-XDL" Name="unite_routed.xdl"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="WBT-LOG" Name="webtalk.log"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+		<File Type="NGDB-NGD" Name="unite.ngd"/>
+		<File Type="NGDB-BLD" Name="unite.bld"/>
+		<File Type="MAP-NCD" Name="unite.ncd"/>
+		<File Type="MAP-PCF" Name="unite.pcf"/>
+		<File Type="MAP-MRP" Name="unite.mrp"/>
+		<File Type="MAP-MAP" Name="unite.map"/>
+	</Run>
 </Runs>
 
