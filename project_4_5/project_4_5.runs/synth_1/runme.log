@@ -1,0 +1,697 @@
+
+*** Running xst
+    with args -ifn "unite.xst" -ofn "unite.srp" -intstyle ise
+
+Reading design: unite.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/i2c_master_bit_ctrl.vhd" into library work
+Parsing entity <i2c_master_bit_ctrl>.
+Parsing architecture <structural> of entity <i2c_master_bit_ctrl>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Register.vhd" into library work
+Parsing entity <SimpleRegister>.
+Parsing architecture <Behavioral> of entity <simpleregister>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/ProgramCounter.vhd" into library work
+Parsing entity <ProgramCounter>.
+Parsing architecture <Behavioral> of entity <programcounter>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Mux.vhd" into library work
+Parsing entity <Mux>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/tri-state.vhd" into library work
+Parsing entity <tristate>.
+Parsing architecture <Behavioral> of entity <tristate>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/PWM.vhd" into library work
+Parsing entity <LEDPWM>.
+Parsing architecture <Behavioral> of entity <ledpwm>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/i2c.vhd" into library work
+Parsing entity <i2c_master_byte_ctrl>.
+Parsing architecture <structural> of entity <i2c_master_byte_ctrl>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/CPU.vhd" into library work
+Parsing entity <CPU>.
+Parsing architecture <Behavioral> of entity <cpu>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/BRAM.vhd" into library work
+Parsing entity <BRAM>.
+Parsing architecture <Behavioral> of entity <bram>.
+Parsing VHDL file "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" into library work
+Parsing entity <unite>.
+Parsing architecture <Behavioral> of entity <unite>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <unite> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:321 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" Line 50: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" Line 51: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" Line 52: Comparison between arrays of unequal length always returns FALSE.
+
+Elaborating entity <LEDPWM> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <tristate> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BRAM> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <CPU> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <SimpleRegister> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Mux> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ProgramCounter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <BRAM> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <SimpleRegister> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Mux> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <i2c_master_byte_ctrl> (architecture <structural>) from library <work>.
+
+Elaborating entity <i2c_master_bit_ctrl> (architecture <structural>) from library <work>.
+INFO:HDLCompiler:679 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/i2c_master_bit_ctrl.vhd" Line 561. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/i2c.vhd" Line 317. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" Line 47: Net <I2CReadRegisterOut[15]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <unite>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd".
+INFO:Xst:3210 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" line 157: Output port <ack_out> of the instance <i2c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" line 157: Output port <i2c_busy> of the instance <i2c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/oneringtorulethemall.vhd" line 157: Output port <i2c_al> of the instance <i2c> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'I2CReadRegisterOut<15:8>', unconnected in block 'unite', is tied to its initial value (00000000).
+    Summary:
+	no macro.
+Unit <unite> synthesized.
+
+Synthesizing Unit <LEDPWM>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/PWM.vhd".
+        WIDTH = 25
+    Found 8-bit register for signal <counter>.
+    Found 8-bit adder for signal <counter[7]_GND_5_o_add_1_OUT> created at line 1241.
+    Found 8-bit comparator greater for signal <ledstate> created at line 20
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <LEDPWM> synthesized.
+
+Synthesizing Unit <tristate>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/tri-state.vhd".
+    Found 1-bit tristate buffer for signal <scl> created at line 23
+    Found 1-bit tristate buffer for signal <sda> created at line 25
+    Summary:
+	inferred   2 Tristate(s).
+Unit <tristate> synthesized.
+
+Synthesizing Unit <BRAM_1>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/BRAM.vhd".
+        MEM_ADDR_WIDTH = 10
+        MEM_DATA_WIDTH = 16
+        EDGE_TYPE = false
+        MEM_NAME = "H:\Xilinx\project_4\project_4_5\inst.mem"
+    Found 1024x16-bit single-port RAM <Mram_Ram> for signal <Ram>.
+    Found 16-bit register for signal <ReadData>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <BRAM_1> synthesized.
+
+Synthesizing Unit <CPU>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/CPU.vhd".
+        WIDTH = 16
+        ADDRESS_WIDTH = 15
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <CPU> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/ALU.vhd".
+        WIDTH = 16
+WARNING:Xst:647 - Input <c<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c<15:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit adder for signal <register_D[15]_GND_31_o_add_5_OUT> created at line 1253.
+    Found 16-bit adder for signal <A_or_M[15]_GND_31_o_add_6_OUT> created at line 1253.
+    Found 16-bit adder for signal <register_D[15]_A_or_M[15]_add_9_OUT> created at line 38.
+    Found 16-bit subtractor for signal <register_D[15]_GND_31_o_sub_8_OUT<15:0>> created at line 1320.
+    Found 16-bit subtractor for signal <A_or_M[15]_GND_31_o_sub_9_OUT<15:0>> created at line 1320.
+    Found 16-bit subtractor for signal <register_D[15]_A_or_M[15]_sub_11_OUT<15:0>> created at line 39.
+    Found 16-bit subtractor for signal <A_or_M[15]_register_D[15]_sub_12_OUT<15:0>> created at line 40.
+    Found 16-bit subtractor for signal <register_D[15]_unary_minus_4_OUT<15:0>> created at line 0.
+    Found 16-bit subtractor for signal <A_or_M[15]_unary_minus_5_OUT<15:0>> created at line 0.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  47 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <SimpleRegister_1>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Register.vhd".
+        WIDTH = 16
+    Found 16-bit register for signal <outval>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <SimpleRegister_1> synthesized.
+
+Synthesizing Unit <Mux_1>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Mux.vhd".
+        WIDTH = 16
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux_1> synthesized.
+
+Synthesizing Unit <ProgramCounter>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/ProgramCounter.vhd".
+        WIDTH = 16
+WARNING:Xst:647 - Input <instruction<14:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <outval_s>.
+    Found 16-bit adder for signal <outval_s[15]_GND_35_o_add_7_OUT> created at line 1241.
+    Found 16-bit comparator greater for signal <GND_35_o_comp[15]_LessThan_3_o> created at line 34
+    Found 16-bit comparator greater for signal <comp[15]_GND_35_o_LessThan_5_o> created at line 34
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <ProgramCounter> synthesized.
+
+Synthesizing Unit <BRAM_2>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/BRAM.vhd".
+        MEM_ADDR_WIDTH = 10
+        MEM_DATA_WIDTH = 16
+        EDGE_TYPE = false
+        MEM_NAME = "H:\Xilinx\project_4\project_4_5\data.mem"
+    Found 1024x16-bit single-port RAM <Mram_Ram> for signal <Ram>.
+    Found 16-bit register for signal <ReadData>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <BRAM_2> synthesized.
+
+Synthesizing Unit <SimpleRegister>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Register.vhd".
+        WIDTH = 16
+    Found 16-bit register for signal <outval>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <SimpleRegister> synthesized.
+
+Synthesizing Unit <Mux>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/imports/new/Mux.vhd".
+        WIDTH = 16
+    Summary:
+	no macro.
+Unit <Mux> synthesized.
+
+Synthesizing Unit <i2c_master_byte_ctrl>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/i2c.vhd".
+    Found 3-bit register for signal <dcnt>.
+    Found 4-bit register for signal <core_cmd>.
+    Found 1-bit register for signal <core_txd>.
+    Found 1-bit register for signal <shift>.
+    Found 1-bit register for signal <ld>.
+    Found 1-bit register for signal <host_ack>.
+    Found 3-bit register for signal <statemachine.c_state>.
+    Found 1-bit register for signal <ack_out>.
+    Found 8-bit register for signal <sr>.
+    Found finite state machine <FSM_0> for signal <statemachine.c_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_al_OR_71_o (positive)                      |
+    | Reset type         | synchronous                                    |
+    | Reset State        | st_idle                                        |
+    | Power Up State     | st_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit subtractor for signal <GND_54_o_GND_54_o_sub_6_OUT<2:0>> created at line 1308.
+    Found 4-bit 6-to-1 multiplexer for signal <statemachine.c_state[2]_X_21_o_wide_mux_38_OUT> created at line 227.
+    Found 1-bit 3-to-1 multiplexer for signal <statemachine.c_state[1]_GND_54_o_Mux_40_o> created at line 227.
+    Found 1-bit 3-to-1 multiplexer for signal <statemachine.c_state[2]_core_ack_Mux_42_o> created at line 227.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred  25 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <i2c_master_byte_ctrl> synthesized.
+
+Synthesizing Unit <i2c_master_bit_ctrl>.
+    Related source file is "H:/Xilinx/project_4/project_4_5/project_4_5.srcs/sources_1/new/i2c_master_bit_ctrl.vhd".
+    Found 1-bit register for signal <slave_wait>.
+    Found 16-bit register for signal <cnt>.
+    Found 2-bit register for signal <bus_status_ctrl.cSCL>.
+    Found 2-bit register for signal <bus_status_ctrl.cSDA>.
+    Found 14-bit register for signal <bus_status_ctrl.filter_cnt>.
+    Found 3-bit register for signal <bus_status_ctrl.fSCL>.
+    Found 3-bit register for signal <bus_status_ctrl.fSDA>.
+    Found 1-bit register for signal <sSCL>.
+    Found 1-bit register for signal <sSDA>.
+    Found 1-bit register for signal <dSCL>.
+    Found 1-bit register for signal <dSDA>.
+    Found 1-bit register for signal <bus_status_ctrl.sta_condition>.
+    Found 1-bit register for signal <bus_status_ctrl.sto_condition>.
+    Found 1-bit register for signal <bus_status_ctrl.ibusy>.
+    Found 1-bit register for signal <bus_status_ctrl.cmd_stop>.
+    Found 1-bit register for signal <ial>.
+    Found 1-bit register for signal <dout>.
+    Found 5-bit register for signal <c_state>.
+    Found 1-bit register for signal <cmd_ack>.
+    Found 1-bit register for signal <iscl_oen>.
+    Found 1-bit register for signal <isda_oen>.
+    Found 1-bit register for signal <sda_chk>.
+    Found 1-bit register for signal <dscl_oen>.
+    Found 1-bit register for signal <clk_en>.
+    Found finite state machine <FSM_1> for signal <c_state>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 46                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_ial_OR_68_o (positive)                     |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit subtractor for signal <GND_55_o_GND_55_o_sub_2_OUT<15:0>> created at line 1308.
+    Found 14-bit subtractor for signal <GND_55_o_GND_55_o_sub_11_OUT<13:0>> created at line 1308.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <i2c_master_bit_ctrl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x16-bit single-port RAM                           : 2
+# Adders/Subtractors                                   : 6
+ 14-bit subtractor                                     : 1
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+ 3-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 40
+ 1-bit register                                        : 22
+ 14-bit register                                       : 1
+ 16-bit register                                       : 9
+ 2-bit register                                        : 2
+ 3-bit register                                        : 3
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 3
+ 16-bit comparator greater                             : 2
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 35
+ 1-bit 3-to-1 multiplexer                              : 2
+ 14-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 38
+ 4-bit 2-to-1 multiplexer                              : 8
+ 4-bit 6-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# FSMs                                                 : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BRAM_1>.
+INFO:Xst:3226 - The RAM <Mram_Ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <ReadData>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clock>         | fall     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ReadData>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <BRAM_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <BRAM_2>.
+INFO:Xst:3226 - The RAM <Mram_Ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <ReadData>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clock>         | fall     |
+    |     weA            | connected to signal <WriteEnable>   | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    |     doA            | connected to signal <ReadData>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <BRAM_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LEDPWM>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <LEDPWM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_master_bit_ctrl>.
+The following registers are absorbed into counter <bus_status_ctrl.filter_cnt>: 1 register on signal <bus_status_ctrl.filter_cnt>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <i2c_master_bit_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_master_byte_ctrl>.
+The following registers are absorbed into counter <dcnt>: 1 register on signal <dcnt>.
+Unit <i2c_master_byte_ctrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x16-bit single-port block RAM                     : 2
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+# Counters                                             : 4
+ 14-bit down counter                                   : 1
+ 16-bit down counter                                   : 1
+ 3-bit down counter                                    : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 140
+ Flip-Flops                                            : 140
+# Comparators                                          : 3
+ 16-bit comparator greater                             : 2
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 90
+ 1-bit 2-to-1 multiplexer                              : 42
+ 1-bit 3-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 37
+ 4-bit 2-to-1 multiplexer                              : 8
+ 4-bit 6-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2973 - All outputs of instance <I2CAckRegister> of block <SimpleRegister> are unconnected in block <unite>. Underlying logic will be removed.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2c/FSM_0> on signal <statemachine.c_state[1:3]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ st_idle  | 000
+ st_start | 001
+ st_read  | 010
+ st_write | 011
+ st_ack   | 100
+ st_stop  | 101
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2c/bit_ctrl/FSM_1> on signal <c_state[1:5]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ idle    | 00000
+ start_a | 00001
+ start_b | 00010
+ start_c | 00011
+ start_d | 00100
+ start_e | 00101
+ stop_a  | 00110
+ stop_b  | 00111
+ stop_c  | 01000
+ stop_d  | 01001
+ rd_a    | 01010
+ rd_b    | 01011
+ rd_c    | 01100
+ rd_d    | 01101
+ wr_a    | 01110
+ wr_b    | 01111
+ wr_c    | 10000
+ wr_d    | 10001
+---------------------
+
+Optimizing unit <SimpleRegister_1> ...
+
+Optimizing unit <SimpleRegister> ...
+
+Optimizing unit <unite> ...
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <ProgramCounter> ...
+
+Optimizing unit <i2c_master_byte_ctrl> ...
+
+Optimizing unit <i2c_master_bit_ctrl> ...
+WARNING:Xst:1710 - FF/Latch <i2c/bit_ctrl/bus_status_ctrl.cmd_stop> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/host_ack> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/core_cmd_0> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/core_cmd_1> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/core_cmd_2> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/core_cmd_3> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/statemachine.c_state_FSM_FFd3> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/statemachine.c_state_FSM_FFd2> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/statemachine.c_state_FSM_FFd1> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_0> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_1> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_2> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_3> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_4> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_5> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_6> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_7> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_8> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_9> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_10> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_11> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CWriteRegister/outval_12> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_0> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_1> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_2> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_3> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_4> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_5> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_6> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <I2CReadRegister/outval_7> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_15> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_14> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_12> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_11> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_10> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_15> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_14> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_12> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_11> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_10> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_9> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CReadRegister/outval_8> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CWriteRegister/outval_15> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CWriteRegister/outval_14> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <I2CWriteRegister/outval_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/ack_out> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.ibusy> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.sta_condition> of sequential type is unconnected in block <unite>.
+WARNING:Xst:1710 - FF/Latch <i2c/ld> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/shift> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_7> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_6> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_5> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_4> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_3> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_2> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_1> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/sr_0> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/core_txd> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <instructionMem/Mram_Ram> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <DataMem/Mram_Ram> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_3> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_4> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_5> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_6> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <pwm/counter_7> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_9> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_8> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_7> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_6> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_5> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_4> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_3> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_PC/outval_s_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_15> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_14> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_12> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_11> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_10> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_9> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_8> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_7> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_6> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_5> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_4> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_3> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_D/outval_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_15> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_14> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_12> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_11> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_10> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_9> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_8> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_7> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_6> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_5> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_4> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_3> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <cpu/register_A/outval_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/cmd_ack> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/dout> is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/dcnt_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/dcnt_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/dcnt_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:1293 - FF/Latch <i2c/bit_ctrl/c_state_FSM_FFd1> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/c_state_FSM_FFd2> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/c_state_FSM_FFd3> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/c_state_FSM_FFd5> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/c_state_FSM_FFd4> has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/isda_oen> (without init value) has a constant value of 1 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/iscl_oen> (without init value) has a constant value of 1 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/sda_chk> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/slave_wait> (without init value) has a constant value of 0 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c/bit_ctrl/dscl_oen> (without init value) has a constant value of 1 in block <unite>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/clk_en> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/dSDA> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/bus_status_ctrl.sto_condition> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/bus_status_ctrl.fSDA_1> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/bus_status_ctrl.fSDA_2> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/bus_status_ctrl.cSDA_0> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/bus_status_ctrl.cSDA_1> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/bus_status_ctrl.fSDA_0> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/sSDA> is unconnected in block <unite>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i2c/bit_ctrl/ial> is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_12> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_11> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_10> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_9> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_8> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_7> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_6> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_5> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_4> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_3> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.filter_cnt_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_15> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_14> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_13> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_12> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_11> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_10> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_9> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_8> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_7> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_6> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_5> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_4> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_3> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/cnt_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.fSCL_2> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.fSCL_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.fSCL_0> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/dSCL> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/sSCL> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.cSCL_1> of sequential type is unconnected in block <unite>.
+WARNING:Xst:2677 - Node <i2c/bit_ctrl/bus_status_ctrl.cSCL_0> of sequential type is unconnected in block <unite>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block unite, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+=========================================================================

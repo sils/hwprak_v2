@@ -154,14 +154,6 @@ begin
 			outval => duty_cycle
 		);
 
-	start  <= I2CWriteRegisterOut(12);
-	stop   <= I2CWriteRegisterOut(11);
-	read   <= I2CWriteRegisterOut(10);
-	write  <= I2CWriteRegisterOut(9);
-	ack_in <= I2CWriteRegisterOut(8);
-	din    <= I2CWriteRegisterOut(7 downto 0);
-	dout   <= I2CReadRegisterOut(7 downto 0);
-
 	i2c : entity work.i2c_master_byte_ctrl(structural)
 		port map(
 			clk      => CLK_66MHZ,
@@ -173,19 +165,19 @@ begin
 			--clk_cnt : in unsigned(15 downto 0);	-- 4x SCL
 
 			-- input signals
-			start    => start,
-			stop     => stop,
-			read     => read,
-			write    => write,
-			ack_in   => ack_in,
-			din      => din,
+			start    => I2CWriteRegisterOut(12),
+			stop     => I2CWriteRegisterOut(11),
+			read     => I2CWriteRegisterOut(10),
+			write    => I2CWriteRegisterOut(9),
+			ack_in   => I2CWriteRegisterOut(8),
+			din      => I2CWriteRegisterOut(7 downto 0),
 
 			-- output signals
 			cmd_ack  => cmd_ack,
 			ack_out  => open,
 			i2c_busy => open,           -- ignored
 			i2c_al   => open,           -- ignored
-			dout     => dout,
+			dout     => I2CReadRegisterOut(7 downto 0),
 
 			-- i2c lines
 			scl_i    => scl_i,          -- i2c clock line input

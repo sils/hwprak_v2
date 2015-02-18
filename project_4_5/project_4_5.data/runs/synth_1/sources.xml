@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/i2c_master_bit_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sources_1/new/i2c_master_bit_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Register.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/Register.vhd"/>
+        <Attr Name="ImportTime" Val="1424079314"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ProgramCounter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/ProgramCounter.vhd"/>
+        <Attr Name="ImportTime" Val="1424093468"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Mux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/Mux.vhd"/>
+        <Attr Name="ImportTime" Val="1424079603"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1424091536"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tri-state.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sources_1/new/tri-state.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PWM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sources_1/new/PWM.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sources_1/new/i2c.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CPU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/CPU.vhd"/>
+        <Attr Name="ImportTime" Val="1424092453"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/BRAM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/BRAM.vhd"/>
+        <Attr Name="ImportTime" Val="1422459562"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/oneringtorulethemall.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sources_1/new/oneringtorulethemall.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../task_4_5/task_3.srcs/sources_1/new/FSM.vhd"/>
+        <Attr Name="ImportTime" Val="1422459535"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DataMemory.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/DataMemory.vhd"/>
+        <Attr Name="ImportTime" Val="1422459717"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Hack.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/Hack.vhd"/>
+        <Attr Name="ImportTime" Val="1422459562"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/InstructionMemory.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4.srcs/sources_1/new/InstructionMemory.vhd"/>
+        <Attr Name="ImportTime" Val="1424076612"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="unite"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/oneringtorulethemall.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+</DARoots>
