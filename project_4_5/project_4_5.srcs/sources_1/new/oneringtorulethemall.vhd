@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
+
 entity unite is
 	Port(
 		LED        : out   std_logic_vector(3 downto 0);
@@ -21,7 +22,6 @@ architecture Behavioral of unite is
 	signal sda_o   : std_logic;         -- i2c data line output
 	signal sda_oen : std_logic;
 
-	signal start, stop, read, write, ack_in : std_logic;
 	signal din                              : std_logic_vector(7 downto 0);
 	signal dout                             : std_logic_vector(7 downto 0);
 	signal cmd_ack                          : std_logic; -- command done
@@ -47,7 +47,7 @@ architecture Behavioral of unite is
 	signal I2CReadRegisterOut    : std_logic_vector(15 downto 0) := "0000000000000000";
 	signal I2CReadRegisterEnable : std_logic;
 begin
-	selectDestination(0) <= '1' when (writeM = '1' and adressM = x"400") else '0';
+	selectDestination(0) <= '1' when (writeM = '1' and adressM = "000010000000000") else '0';
 	selectDestination(1) <= '1' when (adressM = x"401") else '0';
 	selectDestination(2) <= '1' when (adressM = x"402") else '0';
 	selectDestination(3) <= writeM when (selectDestination(2 downto 0) = "000") else '0';

@@ -40,8 +40,7 @@ Compiling architecture structural of entity i2c_master_byte_ctrl [i2c_master_byt
 Compiling architecture behavioral of entity unite [unite_default]
 Compiling architecture behavioral of entity testeverything_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 37 VHDL Units
 Built simulation executable testeverything_tb.exe
-Fuse Memory Usage: 43132 KB
-Fuse CPU Usage: 966 ms
+Fuse Memory Usage: 43156 KB
+Fuse CPU Usage: 982 ms
